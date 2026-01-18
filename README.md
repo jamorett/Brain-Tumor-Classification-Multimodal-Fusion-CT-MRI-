@@ -43,11 +43,11 @@ Unlike late fusion (voting) or feature-level fusion, this pipeline implements **
 pip install tensorflow pandas numpy matplotlib seaborn scikit-learn kagglehub
 ```
 
-###Dataset
+### Dataset
 
 The script utilizes the kagglehub library to automatically download the Brain Tumor Multimodal Image Dataset. No manual download is required; the script handles caching.
 
-##🚀 Usage
+## 🚀 Usage
 
 Execute the main training script:
 
@@ -55,33 +55,27 @@ Execute the main training script:
 python brain_tumor_fusion.py
 ```
 
-###Pipeline Flow:
+### Pipeline Flow:
 
-  -Ingestion: Automatic dataset download and path validation.
+  - Ingestion: Automatic dataset download and path validation.
 
-  -Pairing: Algorithmic alignment of MRI and CT images based on filenames.
+  - Pairing: Algorithmic alignment of MRI and CT images based on filenames.
 
-  -Generator Initialization: FusedDataGenerator creates batches of fused images in real-time.
+  - Generator Initialization: FusedDataGenerator creates batches of fused images in real-time.
 
-  -Training: Sequential training of VGG16 followed by the Custom CNN.
+  - Training: Sequential training of VGG16 followed by the Custom CNN.
 
-  -Evaluation: Generation of Confusion Matrices and Classification Reports.
+  - Evaluation: Generation of Confusion Matrices and Classification Reports.
 
 
-##📊 Evaluation Metrics
+## 📊 Evaluation Metrics
 
 The system outputs the following performance indicators for both models:
 
-  -Binary Cross-Entropy Loss
+  - Binary Cross-Entropy Loss
 
-  -Accuracy Score
+  - Accuracy Score
 
-  -Confusion Matrix: To visualize False Positives (Type I Error) vs. False Negatives (Type II Error).
+  - Confusion Matrix: To visualize False Positives (Type I Error) vs. False Negatives (Type II Error).
 
-  -Training Dynamics: Plots of Loss/Accuracy over epochs to identify overfitting.
-
-
-
-
-
-
+  - Training Dynamics: Plots of Loss/Accuracy over epochs to identify overfitting.
