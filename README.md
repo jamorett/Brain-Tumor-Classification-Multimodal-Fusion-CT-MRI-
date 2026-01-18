@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat)](LICENSE)
 [![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-20BEFF?style=flat&logo=kaggle)](https://www.kaggle.com/datasets/murtozalikhon/brain-tumor-multimodal-image-ct-and-mri)
 
-## 📖 Executive Summary
+## 📖 Summary
 
 This repository implements a **multimodal deep learning pipeline** for the binary classification of brain tumors ("Healthy" vs. "Tumor"). The core innovation of this project is the implementation of **Input-Level Data Fusion**, combining spatially aligned Computerized Tomography (CT) and Magnetic Resonance Imaging (MRI) scans into a single tensor representation.
 
